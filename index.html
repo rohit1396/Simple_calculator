@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple_Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrap" id="theme">
+        <div class="container">
+            <h1>Calculator</h1>
+            <div class="button-row">
+                <input type="text" value="" id="result" name="result" disabled placeholder="Result">
+            </div>
+            <div class="button-row">
+                <input type="button" value="(" id="open" onclick="clicked('(')">
+                <input type="button" value="%" id="modulo" onclick="clicked('%')">
+                <input type="button" value=")" id="close" onclick="clicked(')')">
+                <input type="button" value="C" id="clear" onclick="clearResult()">
+            </div>
+            <div class="button-row">
+                <input type="button" value="9" id="nine" onclick="clicked(9)">
+                <input type="button" value="8" id="eight" onclick="clicked(8)">
+                <input type="button" value="7" id="seven" onclick="clicked(7)">
+                <input type="button" value="+" id="add" onclick="clicked('+')">
+            </div>
+            <div class="button-row">
+                <input type="button" value="6" id="six" onclick="clicked(6)">
+                <input type="button" value="5" id="five" onclick="clicked(5)">
+                <input type="button" value="4" id="four" onclick="clicked(4)">
+                <input type="button" value="-" id="substract" onclick="clicked('-')">
+            </div>
+            <div class="button-row">
+                <input type="button" value="3" id="three" onclick="clicked(3)">
+                <input type="button" value="2" id="two" onclick="clicked(2)">
+                <input type="button" value="1" id="one" onclick="clicked(1)">
+                <input type="button" value="*" id="multiply" onclick="clicked('*')">
+            </div>
+            <div class="button-row">
+                <input type="button" value="/" id="divide" onclick="clicked('/')">
+                <input type="button" value="0" id="zero" onclick="clicked(0)">
+                <input type="button" value="." id="decimal" onclick="clicked('.')">
+                <input type="button" value="=" id="equals" onclick="evaluateResult()">
+            </div>
+        </div>
+        <div>
+           <button id="darkMode" onclick="switchMode()">Switch Dark Mode</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
